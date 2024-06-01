@@ -1,17 +1,16 @@
 package net.vintagewii.mccourse.datagen;
 
+import net.vintagewii.mccourse.MCCourseMod;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.vintagewii.mccourse.MCCourseMod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagGenerator extends ItemTagsProvider {
-
     public ModItemTagGenerator(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> future,
                                CompletableFuture<TagLookup<Block>> completableFuture, @Nullable ExistingFileHelper existingFileHelper) {
         super(packOutput, future, completableFuture, MCCourseMod.MOD_ID, existingFileHelper);
@@ -19,7 +18,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        //add item tags here
+        // Add Item Tags here
+
     }
 
     @Override

@@ -1,12 +1,12 @@
 package net.vintagewii.mccourse.datagen;
 
+import net.vintagewii.mccourse.MCCourseMod;
+import net.vintagewii.mccourse.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
-import net.vintagewii.mccourse.MCCourseMod;
-import net.vintagewii.mccourse.block.ModBlocks;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
